@@ -1,0 +1,31 @@
+/* 
+    link web icon: https://fontawesome.com/search?o=r&m=free  - đã nhúng
+    link font chu: https://fonts.google.com/
+*/
+
+/* 
+    Ở ĐÂY CHỈ VIẾT CSS CHUNG CHO TOÀN BỘ TRANG WEB 
+    các phần root, *, body không cần sửa. Phần root có thể thêm màu nếu thiếu - nhớ ghi rõ màu của phần nào
+*/
+
+:root {
+    --color-main: #FCC324;
+    --color-header: #000000;
+    --color-bg-section: #E5E5E5;
+    --color-price: #F73F3F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}

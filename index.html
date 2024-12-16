@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <title>Web 2 demo</title>
+    <link rel="icon" href="asset/img//title.png"> <!-- icon trên tab -->
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="asset/img/logo.webp" alt="logo" class="logo">
+        </a>
+        <div class="menu">
+            <ul>
+                <a href="">
+                    <li>Trang chủ</li>
+                </a>
+                <a href="">
+                    <li>Sản phẩm mới</li>
+                </a>
+                <a href="">
+                    <li>Product Views</li>
+                </a>
+                <a href="">
+                    <li>Blog</li>
+                </a>
+                <a href="">
+                    <li>Giới thiệu</li>
+                </a>
+                <a href="">
+                    <li>Liên hệ</li>
+                </a>
+            </ul>
+        </div>
+        <div class="icon">
+            <a href="">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Slide -->
+    <section class="slide">
+        <div class="list">
+            <div class="item">
+                <img src="asset/img/slideshow_1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="asset/img/slideshow_2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="asset/img/slideshow_3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- button -->
+        <div class="buttons">
+            <button id="pre"><</button>
+            <button id="next">></button>
+        </div>
+
+        <!-- dots -->
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <!-- script slide -->
+    <script src="asset/js/slide.js"></script>
+
+    <!-- chao mung -->
+    <section class="introduce">
+        <div class="img">
+            <img src="asset/img/section-1.webp" alt="">
+        </div>
+
+        <div class="description">
+            <h2>Chào mừng đến với tiệm Pizza của chúng tôi</h2>
+
+            <div class="icon">
+                <a href="">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-bread-slice"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-burger"></i>
+                </a>
+            </div>
+
+            <p>Các đầu bếp của chúng tôi luôn hoạt động 24/7 đảm bảo phục vụ du khách vào bất kỳ thời điểm nào trong
+                ngày</p>
+            <a href="">
+                <button>Đặt món ngay</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <section class="banner">
+        <div class="container">
+            <a href="">
+                <img src="asset/img/menu-1.webp" alt="">
+            </a>
+            <a href="">
+                <img src="asset/img/menu-2.webp" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- menu trong ngay -->
+    <section class="menuInDay">
+        <div class="container">
+            <div class="top">
+                <h2>Menu <span>trong ngày</span> </h2>
+                <div class="buttons">
+                    <a href="#" class="btn active">Sản phẩm khuyến mãi</a>
+                    <a href="#" class="btn">Sản phẩm nổi bật</a>
+                    <a href="#" class="btn">Tất cả sản phẩm</a>
+                </div>
+            </div>
+            <div class="display-items">
+                <div class="items">
+                    <img src="" alt="">
+                    <p></p>
+                    <div class="order">
+                        <b class="price"></b>
+                        <a href="#">Đặt món +</a>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="" alt="">
+                    <p></p>
+                    <div class="order">
+                        <b class="price"></b>
+                        <a href="#">Đặt món +</a>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="" alt="">
+                    <p></p>
+                    <div class="order">
+                        <b class="price"></b>
+                        <a href="#">Đặt món +</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- script menuInDay -->
+    <script src="asset/js/menuInDay.js"></script>
+
+    <!-- giam gia -->
+    <section class="discount">
+        <img src="asset/img/bg-che-ri-kit-mat.jpeg" alt="">
+        <div class="information">
+            <p>Giảm giá cho tất cả đơn hàng trên 1 triệu</p> <br>
+            <i>Đăng ký thành viên để được giảm giá cho đơn hàng sau</i>
+            <p>Chương trình kéo dài cho đến hết tháng 12</p>
+            <a href="">Xem thêm...</a>
+        </div>
+    </section>
+
+
+    <!-- danh muc -->
+    <section class="category">
+        <div class="container">
+            <h2>Danh mục <span>Pizza</span> </h2>
+            <div class="danh-muc">
+                <div class="inner">
+                    <div class="top">
+                        <img src="asset/img/danh-muc-1.webp" alt="">
+                    </div>
+                    <div class="bottom">
+                        <p>Pizza Gà</p>
+                        <ul>
+                            <li>Margherita</li>
+                            <li>Xúc xích gà</li>
+                            <li>Paneer</li>
+                            <li>Rau</li>
+                            <li>Gia vị</li>
+                            <li>Gà cay</li>
+                            <li>Gà Lebanon</li>
+                            <li>Soya Masala</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="top">
+                        <img src="asset/img/danh-muc-2.webp" alt="">
+                    </div>
+                    <div class="bottom">
+                        <p>Pizza Cay</p>
+                        <ul>
+                            <li>Chickeroni (Chicken Pepperoni)</li>
+                            <li>Gia vị cay</li>
+                            <li>Pizza chay</li>
+                            <li>Pizza cay cho trẻ</li>
+                            <li>Gấp đôi phô mai</li>
+                            <li>Gà tikka</li>
+                            <li>Xúc xích gà</li>
+                            <li>Gà hung khói</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="top">
+                        <img src="asset/img/danh-muc-3.webp" alt="">
+                    </div>
+                    <div class="bottom">
+                        <p>Pizza Đặt Biệt</p>
+                        <ul>
+                            <li>Pizza Hawaii</li>
+                            <li>Pizza chay</li>
+                            <li>Pizza phô mai</li>
+                            <li>Pizza thập cẩm</li>
+                            <li>Pizza hải sản</li>
+                            <li>Pizza Singapore</li>
+                            <li>Pizza bò thượng hạng</li>
+                            <li>Pizza bò và tôm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- effect snow -->
+    <section class="snowflake">
+        <canvas id="snowCanvas"></canvas>
+    </section>
+
+    <!-- script effect snow -->
+    <script src="asset/js/snow.js"></script>
+
+    <!-- sản phẩm khuyến mãi -->
+    <section class="promotion-section">
+        <div class="container">
+            <h2>Sản phẩm <span>khuyến mãi</span></h2>
+            <div class="pizza-items" id="pizza-container"></div>
+        </div>
+    </section>
+    <script src="asset/js/promotion-product.js"></script>
+
+    <!-- list logo -->
+    <section class="listLogo">
+        <div class="container">
+            <img src="asset/img/logo1.webp" alt="">
+            <img src="asset/img/logo2.webp" alt="">
+            <img src="asset/img/logo3.webp" alt="">
+            <img src="asset/img/logo4.webp" alt="">
+            <img src="asset/img/logo5.webp" alt="">
+            <img src="asset/img/logo6.webp" alt="">
+        </div>
+    </section>
+
+    <!-- dang ky nhan tin -->
+    <section class="email">
+        <div class="label">
+            <h2>Đăng ký nhận tin</h2>
+            <p>Để lại email để nhận thông tin khuyến mãi mới nhất</p>
+        </div>
+        <div class="input">
+            <form action="">
+                <input class="in-email" type="email" name="" id="UserEmail" placeholder="Nhập email của bạn">
+                <a href="">Đăng ký</a>
+            </form>
+        </div>
+    </section>
+
+    <!-- map -->
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.718554357417!2d105.66355587501714!3d18.67662148244749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3139ce683896a715%3A0x5490d52d2cbeb6c1!2zMjYgTmd1eeG7hW4gVGjDoWkgSOG7jWMsIEzDqiBM4bujaSwgVmluaCwgTmdo4buHIEFuLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1734360972037!5m2!1svi!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer class="footer">
+        <i>Copyright © 2024 Group 1</i>
+    </footer>
+</body>
+
+</html>

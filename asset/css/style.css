@@ -1,0 +1,768 @@
+/* Ở ĐÂY VIẾT CSS RIÊNG CHO CÁC ELEMENT */
+
+/* header */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header a .logo {
+    width: auto;
+    height: 40px;
+    object-fit: cover;
+}
+
+.header .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.header .menu ul a {
+    margin-right: 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.header .menu ul a:first-child {
+    color: var(--color-main);
+}
+
+.header .menu ul a li:last-child {
+    margin-right: 0;
+}
+
+.header .menu ul a li:hover {
+    color: var(--color-main);
+    transition: 0.5s;
+}
+
+.header .icon a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header .icon a {
+    margin-right: 20px;
+}
+
+.header .icon a:last-child {
+    margin-right: 0;
+}
+
+.header .icon a i:hover {
+    color: var(--color-main);
+    transition: 0.5s;
+}
+
+/* end header */
+
+/* slider */
+.slide {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Slide list */
+.slide .list {
+    position: relative;
+    display: flex;
+    width: 300%;
+    /* Đủ cho 3 slides */
+    height: 100%;
+    transition: 1s;
+}
+
+.slide .item img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Buttons (previous & next) */
+.slide .buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.slide .buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.slide .buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots */
+.slide .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide .dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.slide .dots li.active {
+    background-color: var(--color-main);
+    opacity: 1;
+}
+
+/* end slider */
+
+/* introduce */
+.introduce {
+    background-color: var(--color-bg-section);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduce .img {
+    width: 50%;
+    padding-left: 100px;
+}
+
+.introduce .img img {
+    width: auto;
+    height: 450px;
+    object-fit: cover;
+    padding-right: 40px;
+    margin-left: 40px;
+}
+
+.introduce .description {
+    width: 30%;
+}
+
+.introduce .description h2 {
+    font-size: 30px;
+}
+
+.introduce .description .icon {
+    display: flex;
+    /* Đảm bảo các icon xếp ngang */
+    gap: 20px;
+    /* Khoảng cách giữa các icon */
+}
+
+.introduce .description .icon a {
+    display: flex;
+    /* Kích hoạt Flexbox */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    text-decoration: none;
+    font-size: 50px;
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+    /* Chiều rộng của khung */
+    height: 100px;
+    /* Chiều cao của khung */
+    color: black;
+    border-radius: 50%;
+    /* Tạo hình tròn */
+}
+
+.introduce .description .icon a:hover {
+    background-color: var(--color-main);
+    border: none;
+    color: white;
+    transition: 0.5s ease-out;
+}
+
+.introduce .description p {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.introduce .description a {
+    text-decoration: none;
+}
+
+.introduce .description a button {
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-main);
+}
+
+.introduce .description a button:hover {
+    color: white;
+    transition: 0.5s ease;
+}
+
+/* end introduce */
+
+/* banner */
+.banner .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+.banner .container a {
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.banner .container a img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    border: 10px solid var(--color-main);
+    transition: transform 0.3s ease;
+}
+
+.banner .container a:last-child {
+    margin-right: 0;
+}
+
+.banner img:hover {
+    transform: scale(0.98);
+}
+
+/* end banner */
+
+/* menuInDay */
+.menuInDay {
+    background-color: var(--color-bg-section);
+    width: 100%;
+    height: 800px;
+}
+
+.menuInDay .container .top {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.menuInDay .container .top h2 span {
+    color: var(--color-main);
+}
+
+.menuInDay .container .top .buttons {
+    margin-top: 60px;
+}
+
+.menuInDay .container .top .buttons a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 40px;
+    padding: 8px 40px;
+    border-radius: 20px;
+    background-color: var(--color-main);
+}
+
+.menuInDay .container .top .buttons a:hover {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.menuInDay .container .display-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuInDay .container .display-items .items {
+    width: calc(95% / 3);
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 80px;
+    transition: transform 0.3s ease;
+}
+
+.menuInDay .container .display-items .items:hover {
+    transform: scale(0.98);
+}
+
+.menuInDay .container .display-items .items img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menuInDay .container .display-items .items p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menuInDay .container .display-items .items .order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.menuInDay .container .display-items .items .order .price {
+    color: red;
+}
+
+.menuInDay .container .display-items .items .order a {
+    text-decoration: none;
+    font-size: 19px;
+    border: 3px solid var(--color-main);
+    padding: 2px 15px;
+}
+
+.menuInDay .container .display-items .items .order a:hover {
+    background-color: var(--color-main);
+    transition: 0.5s ease;
+    color: white;
+}
+
+.menuInDay .container .top .buttons .btn {
+    text-decoration: none;
+    color: black;
+    /* Màu chữ mặc định */
+    font-size: 20px;
+    margin-right: 40px;
+    padding: 8px 40px;
+    border-radius: 20px;
+    background-color: var(--color-main);
+    transition: 0.3s;
+}
+
+.menuInDay .container .top .buttons .btn:hover {
+    color: white;
+}
+
+.menuInDay .container .top .buttons .btn.btn.active {
+    color: white;
+    background-color: #333;
+}
+
+/* end menuInDay*/
+
+/* discount */
+.discount {
+    position: relative;
+}
+
+.discount img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.discount .information {
+    position: absolute;
+    bottom: 240px;
+    left: 300px;
+    color: white;
+    text-align: center;
+}
+
+.discount .information p:nth-child(1) {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.discount .information a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 30px;
+    border-radius: 20px;
+    background-color: var(--color-main);
+}
+
+/* end discount */
+
+/* category */
+.category {
+    width: 100%;
+    background-color: white;
+    height: 900px;
+    padding-top: 60px;
+}
+
+.category .container h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.category .container h2 span {
+    color: var(--color-main);
+}
+
+.category .container .danh-muc {
+    display: flex;
+}
+
+.category .container .inner {
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category .container .inner .top img {
+    width: 400px
+}
+
+.category .container .inner .bottom p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.category .container .inner .bottom ul li {
+    margin-bottom: 10px;
+}
+
+/* end category */
+
+/* snow effect */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    z-index: 9999;
+    color: rgb(230, 133, 15);
+    user-select: none;
+    pointer-events: none;
+    font-size: 1em;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* end snow effect */
+
+/* promotion-product */
+.promotion-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--color-bg-section);
+}
+
+.promotion-section .container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.promotion-section span {
+    color: #f6a900;
+}
+
+.promotion-section .container .pizza-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promotion-section .container .item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion-section .container .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promotion-section .container .item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.promotion-section .container .item p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+    margin: 15px 10px 5px;
+}
+
+.promotion-section .container .item .price {
+    display: block;
+    font-size: 18px;
+    color: #e74c3c;
+    margin: 5px 0 10px;
+    font-weight: bold;
+}
+
+.promotion-section .container .item button {
+    background-color: #f6a900;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.promotion-section .container .item button:hover {
+    background-color: #e69500;
+}
+
+/* end promotion-product */
+
+/* listLogo */
+.listLogo .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listLogo .container img {
+    padding: 80px 0;
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+}
+/* end listLogo */
+
+/* email */
+.email {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.email .label {
+    color: white;
+    text-align: center;
+    padding-right: 200px;
+}
+
+.email .input form .in-email{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.email .input form .in-email::placeholder {
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.email .input form a {
+    text-decoration: none;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px;
+    background-color: var(--color-main);
+}
+/* end email */
+
+/* map */
+.map iframe {
+    width: 100%;
+}
+/* end map */
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #e69500;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end footer */
+
+
+/* Media Query cho Tablet (màn hình từ 768px trở xuống) */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header .menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .header .menu ul a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .slide {
+        height: 400px;
+    }
+
+    .introduce {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .introduce .img,
+    .introduce .description {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .banner .container a {
+        margin-bottom: 20px;
+    }
+
+    .menuInDay .container .display-items {
+        flex-direction: column;
+    }
+
+    .menuInDay .container .display-items .items {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .category .container .danh-muc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category .container .inner {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .email {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .email .label {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .email .input form .in-email {
+        width: 100%;
+    }
+
+    .listLogo .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .listLogo .container img {
+        height: 150px;
+        margin: 10px;
+    }
+}
+
+/* Media Query cho Mobile (màn hình từ 480px trở xuống) */
+@media screen and (max-width: 480px) {
+    .slide {
+        height: 300px;
+    }
+
+    .slide .buttons button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .introduce .description h2 {
+        font-size: 24px;
+    }
+
+    .introduce .description .icon a {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .discount .information {
+        bottom: 100px;
+        left: 20px;
+        font-size: 14px;
+    }
+
+    .discount .information p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .category .container .inner {
+        height: auto;
+    }
+
+    .footer {
+        font-size: 16px;
+    }
+}
