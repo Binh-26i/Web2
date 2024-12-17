@@ -1,11 +1,11 @@
 // Dữ liệu mẫu cho menu
 const pizzas = [
-    { id: 1, name: 'Pizza Hải Sản', price: 159000, image: 'asset/img/new1.png' },
-    { id: 2, name: 'Pizza Thập Cẩm', price: 79000, image: 'asset/img/new2.png' },
-    { id: 3, name: 'Meat Lovers - Pizza 5 Loại Thịt', price: 79000, image: 'asset/img/new3.png' },
-    { id: 4, name: 'Ocean Mania - Hải Sản Xốt Mayonnaise', price: 79000, image: 'asset/img/new4.png' },
-    { id: 5, name: 'Pepperoni Feast', price: 79000, image: 'asset/img/new5.png' },
-    { id: 6, name: 'Pizza Phở', price: 244000, image: 'asset/img/new6.png' },
+    { id: 1, name: 'Pizza Hải Sản', price: 159000, image: '../asset/img/new1.png' },
+    { id: 2, name: 'Pizza Thập Cẩm', price: 79000, image: '../asset/img/new2.png' },
+    { id: 3, name: 'Meat Lovers - Pizza 5 Loại Thịt', price: 79000, image: '../asset/img/new3.png' },
+    { id: 4, name: 'Ocean Mania - Hải Sản Xốt Mayonnaise', price: 79000, image: '../asset/img/new4.png' },
+    { id: 5, name: 'Pepperoni Feast', price: 79000, image: '../asset/img/new5.png' },
+    { id: 6, name: 'Pizza Phở', price: 244000, image: '../asset/img/new6.png' },
 ];
 
 

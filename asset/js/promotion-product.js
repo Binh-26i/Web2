@@ -53,7 +53,7 @@ function renderPizzaItems() {
           <img src="${item.img}" alt="${item.name}">
           <p>${item.name}</p>
           <span class="price">${item.price}</span>
-          <a href="order.html" class="order-btn">Đặt món +</a>
+          <a href="child-page/order.html" class="order-btn">Đặt món +</a>
         </div>
       `;
         pizzaContainer.insertAdjacentHTML("beforeend", pizzaHTML);

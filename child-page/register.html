@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="asset/css/base.css">
-    <link rel="stylesheet" href="asset/css/style.css">
-    <link rel="stylesheet" href="asset/css/order.css">
+    <link rel="stylesheet" href="../asset/css/base.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/order.css">
+    <link rel="stylesheet" href="../asset/css/register.css">
 
-    <title>Order</title>
+    <title>Login</title>
     <link rel="icon" href="asset/img//title.png"> <!-- icon trên tab -->
 </head>
 
 <body>
     <header class="header">
         <a href="index.html">
-            <img src="asset/img/logo.webp" alt="logo" class="logo">
+            <img src="../asset/img/logo.webp" alt="logo" class="logo">
         </a>
         <div class="menu">
             <ul>
@@ -52,29 +53,42 @@
         </div>
     </header>
 
-    <h1>Order <span>Pizza</span> </h1>
-    <!-- Phần menu và thanh toán -->
-    <section class="order-section">
-        <!-- Box chính giữa: Menu -->
-        <div class="menu-box">
-            <h2 class="section-title">Menu Pizza</h2>
-            <div id="menu-items">
-                <!-- JS sẽ render dữ liệu ở đây -->
+    <!-- dang ky -->
+    <section class="register">
+        <img src="../asset/img/banner-register.jpg" alt="">
+        <div class="information">
+            <div class="title">
+                <p>Tạo tài khoản</p>
             </div>
-        </div>
+            <div class="input-information">
+                <form action="">
+                    <label for="fullName">Họ tên: </label>
+                    <input type="text" id="fullName"> <br>
 
-        <!-- Box bên phải: Thanh toán -->
-        <div class="checkout-box">
-            <h3 class="section-title">Thanh Toán</h3>
-            <div id="order-summary">
-                <p>Không có sản phẩm nào.</p>
+                    <!-- <label for="male">Nam</label>
+                    <input type="radio" id="male">
+
+                    <label for="female">Nữ</label>
+                    <input type="radio" id="female"> <br> -->
+
+                    <label for="birdthday">Ngày sinh: </label>
+                    <input type="date" name="" id=""> <br>
+
+                    <label for="UserEmail">Email: </label>
+                    <input type="email" id="UserEmail"> <br>
+
+                    <label for="PassWord">Mật khẩu: </label>
+                    <input type="password" id="PassWord">
+
+                    <a href="">
+                        <button type="submit">Đăng ký</button>
+                    </a>
+                    <br>
+                    <a href="index.html"><-- Quay lại trang chủ</a>
+                </form>                                                 
             </div>
-            <button id="checkout-btn" class="btn-checkout">Thanh Toán</button>
         </div>
     </section>
-
-
-    <script src="asset/js/order.js"></script>
 
     <!-- dang ky nhan tin -->
     <section class="email">
