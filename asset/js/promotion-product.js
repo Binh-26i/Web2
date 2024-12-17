@@ -53,12 +53,16 @@ function renderPizzaItems() {
           <img src="${item.img}" alt="${item.name}">
           <p>${item.name}</p>
           <span class="price">${item.price}</span>
-          <button>Đặt món +</button>
+          <a href="order.html" class="order-btn">Đặt món +</a>
         </div>
       `;
         pizzaContainer.insertAdjacentHTML("beforeend", pizzaHTML);
     });
 }
+
+// Gọi hàm để render sản phẩm
+renderPizzaItems();
+
 
 // Gọi hàm để render sản phẩm
 renderPizzaItems();
