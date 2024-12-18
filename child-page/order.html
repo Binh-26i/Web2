@@ -22,7 +22,7 @@
         </a>
         <div class="menu">
             <ul>
-                <a href="">
+                <a href="../index.html">
                     <li>Trang chủ</li>
                 </a>
                 <a href="">
@@ -37,13 +37,13 @@
                 <a href="">
                     <li>Giới thiệu</li>
                 </a>
-                <a href="">
+                <a href="contact.html">
                     <li>Liên hệ</li>
                 </a>
             </ul>
         </div>
         <div class="icon">
-            <a href="">
+            <a href="../child-page/register.html">
                 <i class="fa-regular fa-user"></i>
             </a>
             <a href="">
@@ -73,8 +73,39 @@
         </div>
     </section>
 
-
+    <!-- script order -->
     <script src="../asset/js/order.js"></script>
+
+    <!-- Box thông báo thanh toán -->
+    <div id="payment-notification" class="payment-notification">
+        <div class="payment-content">
+            <h2>Thanh toán !</h2>
+            <div id="order-items-list"></div>
+
+            <!-- Mã QR 1: Đặt ở phía trên -->
+            <div id="qr-code-container">
+                <img src="https://via.placeholder.com/150" alt="QR Code 1" class="qr-code">
+            </div>
+
+            <!-- Thêm mã QR 2: Đặt ở phía dưới -->
+            <div id="qr-code-container-bottom">
+                <img src="../asset/img/qr-thanh-toan.jpg" alt="QR Code 2" class="qr-code">
+            </div>
+
+            <button id="complete-btn" class="complete-btn">Hoàn thành</button>
+        </div>
+    </div>
+
+    <!-- Hộp thông báo giỏ hàng trống -->
+    <div id="empty-cart-notification" class="empty-cart-notification">
+        <div class="notification-content">
+            <h2>Giỏ hàng trống!</h2>
+            <p>Vui lòng thêm sản phẩm vào giỏ hàng trước khi thanh toán.</p>
+            <button id="close-empty-cart-btn">Đóng</button>
+        </div>
+    </div>
+
+
 
     <!-- dang ky nhan tin -->
     <section class="email">
@@ -89,6 +120,7 @@
             </form>
         </div>
     </section>
+
 
     <!-- map -->
     <section class="map">

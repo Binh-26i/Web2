@@ -1,77 +1,212 @@
-.register {
+body {
     background-color: var(--color-bg-section);
 }
-
-.register img {
-    width: 100%;
+.information {
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
-/* Phần container chính của form */
-.register .information {
-    background-color: white;
-    width: 100%;
-    height: 100vh;
+
+.information .container {
     display: flex;
-    justify-content: center;
 }
 
-/* Định dạng phần tiêu đề nhỏ */
-.register .information .title {
-    padding-right: 100px;
+.information .container .infor-left {
+    border-radius: 10px;
+    border: 5px solid var(--color-main);
+    width: 30%;
+    padding-left: 30px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.register .information .title p {
-    font-size: 40px;
-    padding-top: 200px;
-    padding-right: 80px;
+.information .container .infor-left:hover {
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease;
+    transform: scale(1.05);
 }
 
-/* Định dạng phần form nhập liệu */
-.register .information .input-information form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-}
-
-.register .information .input-information form label {
-    display: inline-block;
-    width: 120px; 
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-.register .information .input-information form input {
-    width: 300px; 
-    padding: 8px; 
-    margin-left: 10px; 
-    box-sizing: border-box;
+.information .container .infor-left form input {
+    width: 300px;
+    padding: 10px;
     margin-bottom: 20px;
 }
 
-.register .information .input-information form button {
+.information .container .infor-left form a button {
+    width: 300px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.information .container .infor-left form a button {
     margin-top: 20px;
-    padding: 8px 12px;
-    background-color: #ff5722;
+    padding: 10px 20px;
+    background-color: #3498db;
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 4px;
+    cursor: pointer;
     font-size: 16px;
-    width: 120px;
 }
 
-.register .information .input-information form button:hover {
-    background-color: #e64a19;
+.information .container .infor-left form a button:hover {
+    background-color: #2980b9;
 }
 
-/* Định dạng cho link quay lại */
-.register .information .input-information form a {
-    text-decoration: none;
-    color: #ff5722;
-    font-weight: bold;
+.information .container .infor-left form p {
+    flex-wrap: wrap
+}
+
+.information .container .infor-right {
+    border-radius: 10px;
+    border: 5px solid var(--color-main);
+    width: 60%;
+    margin-left: 60px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.information .container .infor-right:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
+
+.information .container .infor-right h2 {
+    text-align: center;
+}
+
+.infor-right form {
+    max-width: 600px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.infor-right form label {
     display: inline-block;
-    margin-top: 10px;
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
 }
 
-.register .information .input-information form a:hover {
-    text-decoration: underline;
+.infor-right form input {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.infor-right form a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.infor-right form button {
+    width: 360px;
+    margin-top: 10px;
+    margin-left: 150px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.infor-right form button:hover {
+    background-color: #2980b9;
+}
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none; /* Ẩn mặc định */
+    z-index: 1000;
+  }
+  
+  .notification button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .notification button:hover {
+    background-color: #2980b9;
+  }
+  
+
+@media (max-width: 991px) {
+    .information .container {
+        flex-direction: column;
+    }
+
+    .information .container .infor-left,
+    .information .container .infor-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .infor-right form button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .infor-right form label {
+        width: 40%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .infor-right form input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .information {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .information .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .information .container .infor-left,
+    .information .container .infor-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .infor-right form label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .infor-right form input {
+        width: 100%;
+    }
+
+    .infor-right form button {
+        width: 100%;
+        margin-left: 0;
+    }
 }

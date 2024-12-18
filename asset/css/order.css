@@ -4,7 +4,7 @@ body {
 
 h1 {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 h1 span {
@@ -145,4 +145,101 @@ h1 span {
 
 .order-btn:hover {
     background-color: #e64a19; /* Màu khi hover */
+}
+
+/* Định dạng hộp thông báo */
+.payment-notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    display: none; /* Ban đầu ẩn */
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-content h2 {
+    margin-bottom: 20px;
+}
+
+.payment-content #order-items-list {
+    margin-bottom: 20px;
+}
+
+.payment-content .qr-code {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.payment-content #qr-code-container-bottom {
+    margin-top: 20px; /* Đặt khoảng cách cho mã QR thứ hai */
+}
+
+.complete-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.complete-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Hộp thông báo giỏ hàng trống */
+.empty-cart-notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    display: none; /* Ban đầu ẩn */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Đảm bảo hiển thị trên các phần tử khác */
+}
+
+.notification-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-content h2 {
+    margin-bottom: 20px;
+}
+
+.notification-content p {
+    margin-bottom: 20px;
+}
+
+.notification-content button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.notification-content button:hover {
+    background-color: #2980b9;
 }

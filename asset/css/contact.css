@@ -1,0 +1,65 @@
+.contact {
+    display: flex;
+}
+
+.contact .map {
+    width: 50%;
+}
+
+.contact .map iframe {
+    width: 100%;
+    height: 138vh;
+}
+
+.contact .information {
+    padding: 50px;
+}
+
+.contact .information .under-one, .under-two {
+    font-weight: bold;
+    height: 5px;
+    background-color: black;
+}
+
+.contact .information .inner {
+    padding-left: 50px;
+}
+
+.contact .information .inner p{
+    margin-top: 50px;
+}
+
+.contact .information h2:nth-child(4) {
+    margin-top: 50px;
+}
+
+.contact .information form input{
+    margin-bottom: 20px;
+}
+
+.contact .information form input:nth-child(1) {
+    margin-top: 30px;
+}
+
+.contact .information form input:nth-child(1), input:nth-child(3), input:nth-child(5), textarea {
+    width: 400px;
+    border: none;
+    background-color: rgb(225, 225, 225);
+    padding: 10px;
+}
+
+.contact .information form button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    background-color: var(--color-main);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.contact .information form button:hover, input:focus {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+}
