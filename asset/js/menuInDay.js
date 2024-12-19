@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { img: "asset/img/ga-pho-mai-removebg-preview.png", name: "BURGER GÀ PHÔ MAI", price: "39.000 VND" },
             { img: "asset/img/bo-thuong-hang.png", name: "PIZZA BÒ THƯỢNG HẠNG", price: "59.000 VND" }
         ],
-        "Tất cả sản phẩm": [
+        "Sản phẩm bán chạy": [
             { img: "asset/img/pizza-chay-removebg-preview.png", name: "PIZZA CHAY", price: "29.000 VND" },
             { img: "asset/img/pizza-y-removebg-preview.png", name: "PIZZA Ý TRUYỀN THỐNG", price: "39.000 VND" },
             { img: "asset/img/pizza-my-removebg-preview.png", name: "PIZZA MỸ", price: "49.000 VND" }

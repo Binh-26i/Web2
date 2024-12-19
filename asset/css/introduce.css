@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CO+Guides&display=swap');
+
+.description .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description h2 {
+    font-family: "Playwrite CO Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.description h2 {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+    color: black;
+}
+
+.description .text-des {
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.description .text-des h3 {
+    font-size: 30px;
+    font-family: "Playwrite CO Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--color-main);
+    width: 600px;
+    text-align: center;
+}
+
+.description .text-des h3 {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.description .text-des p {
+    font-size: 20px;
+    font-family: "Playwrite CO Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.description .text-des p{
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.description .main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+    padding: 60px;
+}
+
+.description .main .img {
+    flex-direction: column;
+}
+
+.description .main .img:nth-child(1) {
+    margin-left: 150px;
+}
+
+.description .main .img:nth-child(3) {
+    margin-right: 150px;
+}
+
+.description .main p{
+    font-family: "Playwrite CO Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.description .main p {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+    color: black;
+}
+
+.description .main .img{
+    display: flex;
+    align-items: center;
+}
+
+.description .main .img .left img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.description .main .img .right {
+    text-align: center
+}
+
+.description .main .img .right p{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.description .main .img .right i {
+    padding-top: 50px;
+}
+
+.choice .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice .top img {
+    width: auto;
+    height: 60px;
+    object-fit: cover;
+}
+
+.choice .top .bold {
+    background-color: var(--color-main);
+    width: 60px;
+    height: 6px;
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+.choice .top p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.choice .bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.choice .bottom .item{
+    width: 400px;
+    flex-wrap: wrap;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.choice .bottom .item .img {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice .bottom .item .img img {
+    width: auto;
+    height: 80px;
+    object-fit: cover;
+}
+
+.choice .bottom .item  p {
+    text-align: left;
+    font-size: 20px;
+}

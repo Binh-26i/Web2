@@ -12,24 +12,18 @@
     <link rel="stylesheet" href="../asset/css/order.css">
 
     <title>Order</title>
-    <link rel="icon" href="asset/img//title.png"> <!-- icon trên tab -->
+    <link rel="icon" href="../asset/img/logo.png"> <!-- icon trên tab -->
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html">
-            <img src="../asset/img/logo.webp" alt="logo" class="logo">
+        <a href="../index.html">
+            <img src="../asset/img/logo.png " alt="logo" class="logo">
         </a>
         <div class="menu">
             <ul>
                 <a href="../index.html">
                     <li>Trang chủ</li>
-                </a>
-                <a href="">
-                    <li>Sản phẩm mới</li>
-                </a>
-                <a href="">
-                    <li>Product Views</li>
                 </a>
                 <a href="">
                     <li>Blog</li>
@@ -52,15 +46,18 @@
         </div>
     </header>
 
-    <h1>Order <span>Pizza</span> </h1>
     <!-- Phần menu và thanh toán -->
     <section class="order-section">
         <!-- Box chính giữa: Menu -->
         <div class="menu-box">
-            <h2 class="section-title">Menu Pizza</h2>
-            <div id="menu-items">
-                <!-- JS sẽ render dữ liệu ở đây -->
-            </div>
+            <h2 class="section-title">Pizza</h2>
+            <div id="menu-items"></div>
+
+            <h2 class="section-title">Đồ Uống</h2>
+            <div id="drink-items"></div>
+
+            <h2 class="section-title">Bánh Mì</h2>
+            <div id="bread-items"></div>
         </div>
 
         <!-- Box bên phải: Thanh toán -->
@@ -73,25 +70,17 @@
         </div>
     </section>
 
-    <!-- script order -->
-    <script src="../asset/js/order.js"></script>
-
     <!-- Box thông báo thanh toán -->
     <div id="payment-notification" class="payment-notification">
         <div class="payment-content">
-            <h2>Thanh toán !</h2>
-            <div id="order-items-list"></div>
-
-            <!-- Mã QR 1: Đặt ở phía trên -->
+            <h2>Thanh toán!</h2>
+            <div id="order-items-list" class="list-order"></div>
             <div id="qr-code-container">
                 <img src="https://via.placeholder.com/150" alt="QR Code 1" class="qr-code">
             </div>
-
-            <!-- Thêm mã QR 2: Đặt ở phía dưới -->
             <div id="qr-code-container-bottom">
                 <img src="../asset/img/qr-thanh-toan.jpg" alt="QR Code 2" class="qr-code">
             </div>
-
             <button id="complete-btn" class="complete-btn">Hoàn thành</button>
         </div>
     </div>
@@ -105,6 +94,8 @@
         </div>
     </div>
 
+    <!-- script order -->
+    <script src="../asset/js/order.js"></script>
 
 
     <!-- dang ky nhan tin -->
